@@ -41,7 +41,7 @@ int cyclic(Graph g)
 
 
 
-void insertionsort(Thing* arr, int l, int r)
+void insertionsort(Thing arr[], int l, int r)
 {
 	int i=1;
 	while (i<r)
