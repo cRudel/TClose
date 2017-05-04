@@ -13,15 +13,31 @@ struct thing{
 };
 typedef struct thing* Thing;
 
+//again 1 for true, 0 for false
+int cycHelp(Graph g, int* arr, int* visit, int x)
+{
+	visit[x] = 1;
+	
+}
 
 //Returns 1 if cyclic, 0 otherwise
 int cyclic(Graph g)
 {
-	if(1)
-		return 0;
-	else 
-		return 1;
+	int visited[numVerts(g)];
+	for(int i=0; i<numVerts(g); i++)
+		visited[i] = 0;
+
+	for(int i=0; i<numVerts(g); i++)
+	{
+		int* succ = successors(g, 0);
+		if(!visited[i])
+			if(cycHelp(g, succ, visited, i))
+				return 1;
+	}
+	return 0;
 }
+
+
 
 
 
