@@ -1,3 +1,9 @@
+/*
+	disjsets.c
+	Christopher Rudel & Tucker Parr
+	CS 182
+	I pledge my Honor that I have abided by the Stevens Honor System
+*/
 #include <stdlib.h>
 #include "disjsets.h"
 /* Disjoint subsets sets, a.k.a. union-find structure.
